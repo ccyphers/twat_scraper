@@ -1,6 +1,6 @@
 {
   "name": "twat_scraper",
-  "version": "0.0.1",
+  "version": "0.0.1a",
   "description": "De twat scraper without jsdom dependency",
   "main": "lib/tweets.js",
   "scripts": {
