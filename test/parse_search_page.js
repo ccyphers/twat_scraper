@@ -23,40 +23,40 @@ describe('Tweets', function () {
             assert.isObject(parsed[0]);
         });
 
-        it("an individula record should have the person's name", function() {
+        it("an individual record should have the person's name", function() {
             assert('Vala Afshar' == parsed[0].name)
         });
 
-        it("an individula record should have the person's handle", function() {
+        it("an individual record should have the person's handle", function() {
             assert('@ValaAfshar' == parsed[0].handle)
         });
 
-        it("an individula record should have a tweet id", function() {
+        it("an individual record should have a tweet id", function() {
             assert('616981145926897664' == parsed[0].tweet_id)
         });
 
-        it("an individula record should have a user id", function() {
+        it("an individual record should have a user id", function() {
             assert('259725229' == parsed[0].user_id)
         });
 
-        it("an individula record should have a posted time", function() {
+        it("an individual record should have a posted time", function() {
             assert('7:45 AM - 3 Jul 2015' == parsed[0].post_time)
         });
 
-        it("an individula record should have the post content", function() {
+        it("an individual record should have the post content", function() {
             //console.log(parsed[0])
             assert('Cash holdings ($ billions):\n \nApple $AAPL - $194b\nMicrosoft  $MSFT - $108b\nGoogle $GOOG  - $67b\n\nGreece GDP - $242b' == parsed[0].content)
         });
 
-        it("an individula record should have the number of favorites for the tweet", function() {
+        it("an individual record should have the number of favorites for the tweet", function() {
             assert(18 == parsed[0].number_favorites)
         });
 
-        it("an individula record should have the number of re-tweets", function() {
+        it("an individual record should have the number of re-tweets", function() {
             assert(44 == parsed[0].num_retweets)
         });
 
-        it("an individula record should have the tweet id", function() {
+        it("an individual record should have the tweet id", function() {
             assert('616981145926897664' == parsed[0].tweet_id)
         });
 

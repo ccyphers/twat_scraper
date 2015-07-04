@@ -28,39 +28,39 @@ describe('Tweets', function () {
             assert(parsed.length > 0)
         });
 
-        it("an individula record should have the person's name", function() {
+        it("an individual record should have the person's name", function() {
             assert(keys.indexOf('name' > -1))
         });
 
-        it("an individula record should have the person's handle", function() {
+        it("an individual record should have the person's handle", function() {
             assert(keys.indexOf('handle' > -1))
         });
 
-        it("an individula record should have a tweet id", function() {
+        it("an individual record should have a tweet id", function() {
             assert(keys.indexOf('tweet_id' > -1))
         });
 
-        it("an individula record should have a user id", function() {
+        it("an individual record should have a user id", function() {
             assert(keys.indexOf('user_id' > -1))
         });
 
-        it("an individula record should have a posted time", function() {
+        it("an individual record should have a posted time", function() {
             assert(keys.indexOf('post_time' > -1))
         });
 
-        it("an individula record should have the post content", function() {
+        it("an individual record should have the post content", function() {
             assert(keys.indexOf('content' > -1))
         });
 
-        it("an individula record should have the number of favorites for the tweet", function() {
+        it("an individual record should have the number of favorites for the tweet", function() {
             assert(keys.indexOf('number_favorites' > -1))
         });
 
-        it("an individula record should have the number of re-tweets", function() {
+        it("an individual record should have the number of re-tweets", function() {
             assert(keys.indexOf('number_retweets' > -1))
         });
 
-        it("an individula record should have the tweet id", function() {
+        it("an individual record should have the tweet id", function() {
             assert(keys.indexOf('tweet_id' > -1))
         });
 
