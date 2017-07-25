@@ -6,16 +6,17 @@ var assert = require('chai').assert
 
 describe('Tweets', function () {
     var body = fs.readFileSync(__dirname + "/goog.html").toString()
-        , tweets = new Tweets(body);
+        , tweets = new Tweets();
 
-    describe("#get_tweet_lis()", function () {
+    describe("#getTweetLIS()", function () {
         it('should have at least one <li>', function () {
-            assert.equal(true, tweets.get_tweet_lis().length > 0)
+            assert.equal(true, tweets.getTweetLIS(body).length > 0)
         })
     });
 
     describe("#parse()", function() {
-        var parsed = tweets.parse();
+        const lis = tweets.getTweetLIS(body)
+        var parsed = tweets.parse(lis);
 
         it("should return a collection of records", function() {
             assert.isArray(parsed);
